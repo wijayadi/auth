@@ -1093,7 +1093,7 @@ class Auth {
     } catch (ex) {
       setError(ex);
     }
-    token = access?.token ?? '';
+    token = access?.tokenString ?? '';
 
     if (token.isEmpty && !silently) {
       //
@@ -1110,7 +1110,7 @@ class Auth {
 
         if (result.status == LoginStatus.success) {
           //
-          token = result.accessToken?.token ?? '';
+          token = result.accessToken?.tokenString ?? '';
         } else if (result.status == LoginStatus.cancelled) {
           //
           token = '';

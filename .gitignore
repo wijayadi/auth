@@ -39,7 +39,6 @@ lcov.info
 *.js.deps
 *.js.map
 
-
 ### Eclipse ###
 *.pydevproject
 .project
@@ -125,3 +124,5 @@ ServiceDefinitions.json
 GeneratedPluginRegistrant.*
 Info.plist
 
+# FVM Version Cache
+.fvm/
